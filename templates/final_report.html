@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Judgement Report</title>
+    <style>
+      body {
+        font-family: monospace;
+        background: #0f172a;
+        color: #e5e7eb;
+        padding: 40px;
+      }
+
+      .report-box {
+        background: #020617;
+        padding: 30px;
+        border-radius: 10px;
+        white-space: pre-wrap;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+        max-width: 900px;
+        margin: auto;
+      }
+
+      .title {
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #38bdf8;
+      }
+
+      .btn {
+        display: block;
+        margin: 25px auto 0;
+        padding: 12px 22px;
+        background: #2563eb;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .btn:hover {
+        background: #1d4ed8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">AI Debate Final Judgement Report</div>
+
+    <div class="report-box">{{ report }}</div>
+
+    <form action="/" method="get">
+      <button class="btn">Start New Debate</button>
+    </form>
+  </body>
+</html>
